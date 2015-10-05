@@ -3,6 +3,7 @@ package edu.uw.tacoma.mmuppa.helloworld;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -12,9 +13,11 @@ public class MainActivity extends AppCompatActivity {
 
     private Button sendAgainButton;
     public static final String MESSAGE = "message";
+    public static final String TAG = "Stuart";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.i(TAG, "onCreate method");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
